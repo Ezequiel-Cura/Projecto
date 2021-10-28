@@ -1,0 +1,24 @@
+footer{
+    background-image:$bgbottom;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    div {
+        div{
+            display: inline-block;
+            margin: 50px 0;
+            img:hover{
+                background-color: white;
+                border-radius: 5px;
+            }
+        } 
+        ol{ 
+            li{
+                display: block;
+                position: relative;
+            }
+        }
+    }
+    
+}

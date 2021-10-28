@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #e8d6c0;
+  font-family: 'Poppins', sans-serif;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  font-weight: bold; }
+
+header {
+  background-image: linear-gradient(to top, #e8d6c0, #93b487);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: #004000;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px; }
+  header .menu {
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap; }
+    header .menu div a {
+      display: block;
+      text-decoration: none;
+      padding: 15px; }
+      header .menu div a:hover {
+        color: black;
+        background-color: lightgreen;
+        font-size: 20px; }
+
+main h2 {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border: black solid;
+  text-align: center; }
+
+main .padre-productos .productos {
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  main .padre-productos .productos div {
+    text-align: center;
+    justify-content: center;
+    border: 7px solid #f0e5d8; }
+  main .padre-productos .productos img {
+    width: 300px;
+    height: 300px; }
+  main .padre-productos .productos h5 {
+    padding: 3px;
+    border: black solid; }
+
+main .recetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  justify-items: center;
+  /* overflow: auto; */ }
+  main .recetas div {
+    border: solid black 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px; }
+    main .recetas div .recetas__texto {
+      position: relative;
+      display: inline-block;
+      text-align: center; }
+    main .recetas div .img {
+      width: 400px;
+      height: 400px;
+      align-items: center;
+      z-index: -1; }
+    main .recetas div .texto {
+      position: absolute;
+      top: 25%;
+      left: 10%; }
+  main .recetas .recetas__instrucciones {
+    padding: 10px;
+    border: black solid 2px;
+    font-size: large; }
+
+main .combos {
+  display: flex;
+  flex-wrap: wrap; }
+  main .combos div {
+    margin: 20px; }
+
+main .galeria div div .card {
+  text-align: center;
+  background-color: white;
+  width: 250px;
+  height: 400px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: 7px solid #f0e5d8; }
+  main .galeria div div .card:hover {
+    transform: translate(0px, -20px);
+    transform: scale(100px);
+    transition: all 1s; }
+    main .galeria div div .card:hover img {
+      align-items: center; }
+
+main .galeria div img {
+  width: 200px;
+  height: 300px;
+  margin: 10px; }
+
+main .padre-preguntas {
+  display: flex;
+  flex-direction: column; }
+  main .padre-preguntas div {
+    text-align: center;
+    margin: 1em 0; }
+    main .padre-preguntas div h4 {
+      text-decoration: underline; }
+
+main .padre-contacto form {
+  background-color: #93b487;
+  margin: 2em;
+  padding: 2rem; }
+
+footer {
+  background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
+  height: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center; }
+  footer div div {
+    display: inline-block;
+    margin: 50px 0; }
+    footer div div img:hover {
+      background-color: white;
+      border-radius: 5px; }
+  footer div ol li {
+    display: block;
+    position: relative; }

@@ -1,0 +1,118 @@
+@import "estilo";
+
+main{
+    @include encabezados;
+    .padre-productos{
+        
+        .productos{
+            justify-content: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            div{
+                text-align: center;
+                justify-content: center;
+                border:7px solid #f0e5d8;
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            h5{
+                padding: 3px;
+                border: black solid;
+            }
+        }
+    }
+    .recetas{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+        /* overflow: auto; */
+        div{
+            border: solid black 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            .recetas__texto{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+            }
+            .img{
+                width: 400px;
+                height: 400px;
+                align-items: center;
+                z-index: -1;
+            }
+            .texto{
+                position: absolute;
+                top: 25%;
+                left: 10%;
+                
+            }
+        }
+        .recetas__instrucciones{
+            padding: 10px;
+            border: black solid 2px;
+            font-size: large;
+        }
+    }
+    .combos{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            margin: 20px;
+        }
+    }
+    .galeria{
+        div{
+            div{  
+                .card{
+                    text-align: center;    
+                    background-color: white;
+                    width: 250px;
+                    height: 400px;
+                    box-shadow: 1px 1px 1px 1px gray;
+                    border:7px solid #f0e5d8;
+                    &:hover{
+                    transform:  translate(0px, -20px );
+                    transform: scale(100px);
+                    transition: all 1s;
+                    img{
+                        align-items: center;
+                    
+                    }
+                    }
+                }
+            }    
+    
+            img{
+                width: 200px;
+                height: 300px;
+                margin: 10px;
+            }
+        }
+    }
+    .padre-preguntas{
+        display: flex;
+        flex-direction: column;
+        div{
+            text-align: center;
+            margin: 1em 0;
+            h4{
+                text-decoration: underline;
+            }
+        }
+    
+    }
+    .padre-contacto{
+        form{
+            background-color: $bgcontacto;
+            margin: 2em;
+            padding: 2rem;
+        }
+    }
+}

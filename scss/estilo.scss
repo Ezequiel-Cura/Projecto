@@ -1,0 +1,30 @@
+@import "variables";
+@import "body";
+@import "header";
+@import "main";
+@import "footer";
+
+@mixin encabezados{
+    h1{
+        font-family: 'Libre Baskerville', serif; 
+        color: #004000;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Lato', sans-serif;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        border: black solid;
+        text-align: center;
+    }
+
+    h5{
+        padding: 3px;
+        border: black solid;
+    }
+}
+
