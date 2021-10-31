@@ -29,13 +29,14 @@
         
     </header>
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto h-75" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+      <div class="padre-carrusel mx-auto">
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators eje-z-indicadores">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner w-75 h-25 mx-auto eje-z-imagenes">
               <div class="carousel-item active">
                 <img src="media/mermelada.jpeg" class="d-block w-100 img-fluid h-75" alt="...">
               </div>
@@ -54,13 +55,13 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        <!--<section class="seccionnoticias">Primera seccion
-            <h2 class="uppercase">Noticias</h2>
-            <img src="media/mermelada.jpeg" alt="Noticia mermelada" >
-        </section>-->
+        </div>
+      </div>
+      <div class="productos-index">
         <section class="padre-productos"><!--Segunda seccion-->
-            <h2 class="uppercase">Nuestros productos</h2> 
+            <div class="titulo-productos">
+              <h2 class="uppercase">Nuestros productos</h2> 
+            </div>
             <div class="productos">
                 <div data-aos="fade-up">
                 <div><img src="media/aceites.jpeg" alt="Aceites" ></div>
@@ -83,6 +84,7 @@
                 </div>
             </div>
         </section>
+      </div>
     </main>
     
     <footer class="footer"> <!--Bloque-->

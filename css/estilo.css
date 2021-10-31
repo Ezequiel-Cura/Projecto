@@ -15,7 +15,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 5; }
   header h1 {
     font-family: 'Libre Baskerville', serif;
     color: #004000;
@@ -23,6 +23,19 @@ header {
     text-align: center;
     text-transform: uppercase;
     padding: 10px; }
+  header h2 {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    font-weight: bold; }
+  header h5 {
+    padding: 3px;
+    margin-top: 1vh;
+    margin-bottom: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    border-radius: 2rem;
+    background-color: #a6d196; }
   header .menu {
     height: 3.5rem;
     display: flex;
@@ -38,30 +51,63 @@ header {
         background-color: lightgreen;
         font-size: 20px; }
 
+main .padre-carrusel {
+  max-width: 55rem; }
+  main .padre-carrusel .eje-z-indicadores {
+    z-index: 2; }
+  main .padre-carrusel .eje-z-imagenes {
+    z-index: 1; }
+
+main h1 {
+  font-family: 'Libre Baskerville', serif;
+  color: #004000;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px; }
+
 main h2 {
   font-family: 'Lato', sans-serif;
-  display: block;
   padding: 10px;
-  margin: 10px;
-  border: black solid;
-  text-align: center; }
+  font-weight: bold; }
 
-main .padre-productos .productos {
-  justify-content: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  main .padre-productos .productos div {
+main h5 {
+  padding: 3px;
+  margin-top: 1vh;
+  margin-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 2rem;
+  background-color: #a6d196; }
+
+main .padre-productos {
+  background-color: #93b487;
+  margin: 3em;
+  border-radius: 4rem;
+  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+  main .padre-productos .titulo-productos {
+    width: 50%;
     text-align: center;
+    background-color: #a6d196;
+    align-content: center;
+    border-radius: 4rem;
+    margin-left: 10%; }
+  main .padre-productos .productos {
     justify-content: center;
-    border: 7px solid #f0e5d8; }
-  main .padre-productos .productos img {
-    width: 300px;
-    height: 300px; }
-  main .padre-productos .productos h5 {
-    padding: 3px;
-    border: black solid; }
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    main .padre-productos .productos div {
+      text-align: center;
+      justify-content: center; }
+    main .padre-productos .productos img {
+      width: 300px;
+      height: 300px; }
+    main .padre-productos .productos h5 {
+      padding: 3px; }
 
 main .recetas {
   display: grid;
@@ -100,6 +146,7 @@ main .combos {
 main .galeria div div .card {
   text-align: center;
   background-color: white;
+  margin: 2rem;
   width: 250px;
   height: 400px;
   box-shadow: 1px 1px 1px 1px gray;
@@ -133,8 +180,8 @@ main .padre-contacto form {
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
   height: 10%;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   text-align: center; }
   footer div div {
     display: inline-block;

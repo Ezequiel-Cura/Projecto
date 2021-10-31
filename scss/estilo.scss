@@ -1,8 +1,8 @@
-@import "variables";
-@import "body";
-@import "header";
-@import "main";
-@import "footer";
+$bgmain:#e8d6c0;
+$bgtop:linear-gradient(to top, #e8d6c0,#93b487);
+$bgbottom:linear-gradient(to bottom, #e8d6c0,#93b487);
+$bgcontacto:#93b487;
+$bgindex:#a6d196;
 
 @mixin encabezados{
     h1{
@@ -15,16 +15,225 @@
     }
     h2{
         font-family: 'Lato', sans-serif;
-        display: block;
         padding: 10px;
-        margin: 10px;
-        border: black solid;
-        text-align: center;
+        font-weight: bold;
     }
 
     h5{
         padding: 3px;
-        border: black solid;
+        margin-top: 1vh;
+        margin-bottom: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bolder;
+        border-radius: 2rem;
+        background-color: $bgindex;
     }
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:$bgmain ;
+    font-family: 'Poppins', sans-serif  ;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
 
+header{
+    @include encabezados;
+    background-image:$bgtop;
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    z-index: 5;
+    
+    .menu{
+        height: 3.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        div{
+            a{
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+                &:hover{
+                color: black;
+                background-color: lightgreen;
+                font-size: 20px;
+                }
+            }
+        }    
+    }
+
+}
+main{
+    .padre-carrusel{
+        max-width: 55rem;
+        .eje-z-indicadores{
+            z-index: 2;
+        }
+        .eje-z-imagenes{
+            z-index: 1;
+        }
+
+    }
+    @include encabezados;
+    .padre-productos{
+        background-color: $bgcontacto;
+        margin: 3em;
+        border-radius: 4rem;
+        box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+        .titulo-productos{
+            width: 50%;
+            text-align: center;
+            background-color: $bgindex;
+            align-content: center;
+            border-radius: 4rem;
+            margin-left: 10%;
+        }
+        .productos{
+            justify-content: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            
+            div{
+                text-align: center;
+                justify-content: center;
+                
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            h5{
+                padding: 3px;
+                
+            }
+        }
+    }
+    .recetas{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+        /* overflow: auto; */
+        div{
+            border: solid black 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            .recetas__texto{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+            }
+            .img{
+                width: 400px;
+                height: 400px;
+                align-items: center;
+                z-index: -1;
+            }
+            .texto{
+                position: absolute;
+                top: 25%;
+                left: 10%;
+                
+            }
+        }
+        .recetas__instrucciones{
+            padding: 10px;
+            border: black solid 2px;
+            font-size: large;
+        }
+    }
+    .combos{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            margin: 20px;
+        }
+    }
+    .galeria{
+        div{
+            div{  
+                .card{
+                    text-align: center;    
+                    background-color: white;
+                    margin: 2rem;
+                    width: 250px;
+                    height: 400px;
+                    box-shadow: 1px 1px 1px 1px gray;
+                    border:7px solid #f0e5d8;
+                    &:hover{
+                    transform:  translate(0px, -20px );
+                    transform: scale(100px);
+                    transition: all 1s;
+                    img{
+                        align-items: center;
+                    
+                    }
+                    }
+                }
+            }    
+    
+            img{
+                width: 200px;
+                height: 300px;
+                margin: 10px;
+            }
+        }
+    }
+    .padre-preguntas{
+        display: flex;
+        flex-direction: column;
+        div{
+            text-align: center;
+            margin: 1em 0;
+            h4{
+                text-decoration: underline;
+            }
+        }
+    
+    }
+    .padre-contacto{
+        form{
+            background-color: $bgcontacto;
+            margin: 2em;
+            padding: 2rem;
+        }
+    }
+}
+footer{
+    background-image:$bgbottom;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    div {
+        div{
+            display: inline-block;
+            margin: 50px 0;
+            img:hover{
+                background-color: white;
+                border-radius: 5px;
+            }
+        } 
+        ol{ 
+            li{
+                display: block;
+                position: relative;
+            }
+        }
+    }
+    
+}
