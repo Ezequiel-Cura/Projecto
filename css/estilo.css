@@ -41,15 +41,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    background-color: #f7ecdf; }
     header .menu div a {
       display: block;
       text-decoration: none;
-      padding: 15px; }
+      padding: 1vh;
+      margin: 0.5rem; }
       header .menu div a:hover {
         color: black;
         background-color: lightgreen;
-        font-size: 20px; }
+        border-radius: 1em; }
 
 main .padre-carrusel {
   max-width: 55rem; }
@@ -163,15 +165,6 @@ main .galeria div img {
   height: 300px;
   margin: 10px; }
 
-main .padre-preguntas {
-  display: flex;
-  flex-direction: column; }
-  main .padre-preguntas div {
-    text-align: center;
-    margin: 1em 0; }
-    main .padre-preguntas div h4 {
-      text-decoration: underline; }
-
 main .padre-contacto form {
   background-color: #93b487;
   margin: 2em;
@@ -179,10 +172,19 @@ main .padre-contacto form {
 
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
-  height: 10%;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  text-align: center; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10%;
+  justify-content: center; }
+  footer .logo-footer {
+    margin-left: 2rem; }
+  footer .footer-mapa .mapa {
+    height: 15rem;
+    width: 30rem; }
   footer div div {
     display: inline-block;
     margin: 50px 0; }
