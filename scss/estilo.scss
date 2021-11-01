@@ -4,6 +4,7 @@ $bgbottom:linear-gradient(to bottom, #e8d6c0,#93b487);
 $bgcontacto:#93b487;
 $bgindex:#a6d196;
 $bgmenu:#f7ecdf;
+$bgtexto:#c5dbec;
 
 @mixin encabezados{
     h1{
@@ -186,6 +187,11 @@ main{
                         align-items: center;
                     
                     }
+                    
+                    }
+                    .card-texto{
+                        background-color: $bgtexto;
+                        padding: 0;
                     }
                 }
             }    

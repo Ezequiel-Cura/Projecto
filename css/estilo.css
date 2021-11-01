@@ -159,6 +159,9 @@ main .galeria div div .card {
     transition: all 1s; }
     main .galeria div div .card:hover img {
       align-items: center; }
+  main .galeria div div .card .card-texto {
+    background-color: #c5dbec;
+    padding: 0; }
 
 main .galeria div img {
   width: 200px;
