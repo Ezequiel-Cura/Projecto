@@ -139,12 +139,6 @@ main .recetas {
     border: black solid 2px;
     font-size: large; }
 
-main .combos {
-  display: flex;
-  flex-wrap: wrap; }
-  main .combos div {
-    margin: 20px; }
-
 main .galeria div div .card {
   text-align: center;
   background-color: white;
@@ -167,6 +161,26 @@ main .galeria div img {
   width: 200px;
   height: 300px;
   margin: 10px; }
+
+main .combos div div .card {
+  text-align: center;
+  background-color: white;
+  margin: 2rem;
+  width: 250px;
+  height: 400px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: 7px solid #f0e5d8; }
+  main .combos div div .card:hover {
+    transform: translate(0px, -20px);
+    transform: scale(100px);
+    transition: all 1s; }
+
+main .combos div img {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  align-items: center; }
 
 main .padre-contacto form {
   background-color: #93b487;
