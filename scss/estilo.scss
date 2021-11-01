@@ -31,6 +31,7 @@ $bgmenu:#f7ecdf;
         background-color: $bgindex;
     }
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -159,14 +160,9 @@ main{
             border: black solid 2px;
             font-size: large;
         }
+        
     }
-    .combos{
-        display: flex;
-        flex-wrap: wrap;
-        div{
-            margin: 20px;
-        }
-    }
+    
     .galeria{
         div{
             div{  
@@ -208,6 +204,34 @@ main{
     //     }
     
     // }
+    .combos{
+        div{
+            div{  
+                .card{
+                    text-align: center;    
+                    background-color: white;
+                    margin: 2rem;
+                    width: 250px;
+                    height: 400px;
+                    box-shadow: 1px 1px 1px 1px gray;
+                    border:7px solid #f0e5d8;
+                    &:hover{
+                    transform:  translate(0px, -20px );
+                    transform: scale(100px);
+                    transition: all 1s;
+                    
+                    }
+                }
+            }    
+            img{
+                width: 200px;
+                height: 300px;
+                margin: 10px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
     .padre-contacto{
         form{
             background-color: $bgcontacto;
