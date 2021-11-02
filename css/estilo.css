@@ -19,10 +19,12 @@ header {
   header h1 {
     font-family: 'Libre Baskerville', serif;
     color: #004000;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 2em;
+    margin-bottom: 0.5rem; }
   header h2 {
     font-family: 'Lato', sans-serif;
     padding: 10px;
@@ -65,10 +67,12 @@ main .padre-carrusel {
 main h1 {
   font-family: 'Libre Baskerville', serif;
   color: #004000;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px; }
+  padding: 10px;
+  font-size: 2em;
+  margin-bottom: 0.5rem; }
 
 main h2 {
   font-family: 'Lato', sans-serif;
@@ -116,8 +120,7 @@ main .padre-productos {
 main .recetas {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  /* overflow: auto; */ }
+  justify-items: center; }
   main .recetas div {
     border: solid black 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,6 +130,8 @@ main .recetas {
       height: 400px;
       align-items: center;
       z-index: -1; }
+  main .recetas .recetas_imagen {
+    margin-top: 1rem; }
   main .recetas .recetas_texto {
     margin: 0 2rem 2rem; }
     main .recetas .recetas_texto .lista {
