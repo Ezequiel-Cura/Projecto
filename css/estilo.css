@@ -36,6 +36,8 @@ header {
     font-weight: bolder;
     border-radius: 2rem;
     background-color: #a6d196; }
+  header a {
+    text-decoration: none; }
   header .menu {
     height: 3.5rem;
     display: flex;
@@ -114,30 +116,21 @@ main .padre-productos {
 main .recetas {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 25px;
   justify-items: center;
   /* overflow: auto; */ }
   main .recetas div {
     border: solid black 3px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px; }
-    main .recetas div .recetas__texto {
-      position: relative;
-      display: inline-block;
-      text-align: center; }
     main .recetas div .img {
       width: 400px;
       height: 400px;
       align-items: center;
       z-index: -1; }
-    main .recetas div .texto {
-      position: absolute;
-      top: 25%;
-      left: 10%; }
-  main .recetas .recetas__instrucciones {
-    padding: 10px;
-    border: black solid 2px;
-    font-size: large; }
+  main .recetas .recetas_texto {
+    margin: 0 2rem 2rem; }
+    main .recetas .recetas_texto .lista {
+      margin-left: 2rem; }
 
 main .galeria div div .card {
   text-align: center;
@@ -174,6 +167,9 @@ main .combos div div .card {
     transform: translate(0px, -20px);
     transform: scale(100px);
     transition: all 1s; }
+  main .combos div div .card .card-texto {
+    background-color: #c5dbec;
+    padding: 0; }
 
 main .combos div img {
   width: 200px;

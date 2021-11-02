@@ -53,7 +53,9 @@ header{
     position: sticky;
     top: 0; 
     z-index: 5;
-    
+    a{
+        text-decoration: none;
+    }
     .menu{
         height: 3.5rem;
         
@@ -131,35 +133,27 @@ main{
     .recetas{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 25px;
         justify-items: center;
         /* overflow: auto; */
         div{
             border: solid black 3px;
             font-family: Arial, Helvetica, sans-serif;
             padding: 15px;
-            .recetas__texto{
-                position: relative;
-                display: inline-block;
-                text-align: center;
-            }
+            
             .img{
                 width: 400px;
                 height: 400px;
                 align-items: center;
                 z-index: -1;
             }
-            .texto{
-                position: absolute;
-                top: 25%;
-                left: 10%;
-                
-            }
+            
         }
-        .recetas__instrucciones{
-            padding: 10px;
-            border: black solid 2px;
-            font-size: large;
+        .recetas_texto{
+            margin:0 2rem 2rem;
+            .lista{
+                margin-left: 2rem;
+            }
+
         }
         
     }
@@ -226,6 +220,10 @@ main{
                     transform: scale(100px);
                     transition: all 1s;
                     
+                    }
+                    .card-texto{
+                        background-color: $bgtexto;
+                        padding: 0;
                     }
                 }
             }    
