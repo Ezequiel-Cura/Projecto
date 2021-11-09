@@ -42,6 +42,7 @@ header {
     text-decoration: none; }
   header .menu {
     height: 3.5rem;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,6 +60,8 @@ header {
 
 main .padre-carrusel {
   max-width: 55rem; }
+  main .padre-carrusel img {
+    height: 50rem; }
   main .padre-carrusel .eje-z-indicadores {
     z-index: 2; }
   main .padre-carrusel .eje-z-imagenes {
@@ -183,10 +186,16 @@ main .combos div img {
   text-align: center;
   align-items: center; }
 
-main .padre-contacto form {
-  background-color: #93b487;
-  margin: 2em;
-  padding: 2rem; }
+main .prueba .padre-contacto {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; }
+  main .prueba .padre-contacto form {
+    background-color: #93b487;
+    margin: 2em;
+    padding: 2rem; }
+  main .prueba .padre-contacto textarea {
+    resize: none; }
 
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
@@ -211,4 +220,4 @@ footer {
       border-radius: 5px; }
   footer div ol li {
     display: block;
-    position: relative; }
+    text-align: left; }

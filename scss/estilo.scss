@@ -6,6 +6,7 @@ $bgindex:#a6d196;
 $bgmenu:#f7ecdf;
 $bgtexto:#c5dbec;
 
+
 @mixin encabezados{
     h1{
         font-family: 'Libre Baskerville', serif; 
@@ -60,7 +61,7 @@ header{
     }
     .menu{
         height: 3.5rem;
-        
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -84,6 +85,9 @@ header{
 }
 main{
     .padre-carrusel{
+        img{
+            height: 50rem;
+        }
         max-width: 55rem;
         .eje-z-indicadores{
             z-index: 2;
@@ -91,7 +95,7 @@ main{
         .eje-z-imagenes{
             z-index: 1;
         }
-
+        
     }
     @include encabezados;
     .padre-productos{
@@ -156,6 +160,7 @@ main{
         }
         .recetas_texto{
             margin:0 2rem 2rem;
+            
             .lista{
                 margin-left: 2rem;
             }
@@ -231,11 +236,21 @@ main{
             }
         }
     }
-    .padre-contacto{
-        form{
-            background-color: $bgcontacto;
-            margin: 2em;
-            padding: 2rem;
+    .prueba{
+        
+        .padre-contacto{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto ;
+            form{
+                background-color: $bgcontacto;
+                margin: 2em;
+                padding: 2rem;
+                
+            }
+            textarea {
+                resize: none;
+            }
         }
     }
 }
@@ -273,7 +288,7 @@ footer{
         ol{ 
             li{
                 display: block;
-                position: relative;
+                text-align: left;
             }
         }
     }
