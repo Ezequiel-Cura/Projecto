@@ -187,6 +187,7 @@ main .combos div img {
   align-items: center; }
 
 main .prueba .padre-contacto {
+  height: 50vh;
   width: 100%;
   max-width: 600px;
   margin: 0 auto; }
@@ -200,7 +201,7 @@ main .prueba .padre-contacto {
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
   width: 100%;
-  height: 100%;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
