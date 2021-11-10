@@ -95,6 +95,7 @@ main h5 {
 main .padre-productos {
   background-color: #93b487;
   margin: 3em;
+  margin-top: 10rem;
   border-radius: 4rem;
   box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
   main .padre-productos .titulo-productos {
@@ -140,28 +141,29 @@ main .recetas {
     main .recetas .recetas_texto .lista {
       margin-left: 2rem; }
 
-main .galeria div div .card {
-  text-align: center;
-  background-color: white;
-  margin: 2rem;
-  width: 250px;
-  height: 400px;
-  box-shadow: 1px 1px 1px 1px gray;
-  border: 7px solid #f0e5d8; }
-  main .galeria div div .card:hover {
-    transform: translate(0px, -20px);
-    transform: scale(100px);
-    transition: all 1s; }
-    main .galeria div div .card:hover img {
-      align-items: center; }
-  main .galeria div div .card .card-texto {
-    background-color: #c5dbec;
-    padding: 0; }
-
-main .galeria div img {
-  width: 200px;
-  height: 300px;
-  margin: 10px; }
+main .galeria {
+  height: 100vh; }
+  main .galeria div div .card {
+    text-align: center;
+    background-color: white;
+    margin: 2rem;
+    width: 250px;
+    height: 400px;
+    box-shadow: 1px 1px 1px 1px gray;
+    border: 7px solid #f0e5d8; }
+    main .galeria div div .card:hover {
+      transform: translate(0px, -20px);
+      transform: scale(100px);
+      transition: all 1s; }
+      main .galeria div div .card:hover img {
+        align-items: center; }
+    main .galeria div div .card .card-texto {
+      background-color: #c5dbec;
+      padding: 0; }
+  main .galeria div img {
+    width: 200px;
+    height: 300px;
+    margin: 10px; }
 
 main .combos div div .card {
   text-align: center;
@@ -198,10 +200,13 @@ main .prueba .padre-contacto {
   main .prueba .padre-contacto textarea {
     resize: none; }
 
+.footer-especial {
+  position: fixed;
+  bottom: 0; }
+
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
   width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
