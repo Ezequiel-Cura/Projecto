@@ -85,7 +85,7 @@ header{
 
 }
 main{
-    margin-bottom: 55vh;
+    
     .padre-carrusel{
         img{
             height: 50rem;
@@ -173,7 +173,7 @@ main{
     }
     
     .galeria{
-        margin-bottom: 50vh;
+        
         div{
             div{  
                 .card{
@@ -209,7 +209,7 @@ main{
     }
     
     .combos{
-        margin-bottom: 50vh;
+        
         div{
             div{  
                 .card{
@@ -267,7 +267,7 @@ main{
 }
 footer{
     background-image:$bgbottom;
-    bottom: 0;
+    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -275,8 +275,7 @@ footer{
     text-align: center;
     gap: 10%;
     justify-content: center;
-    z-index: 5;
-    position: fixed;
+    
     .logo-footer{
         margin-left: 2rem;
     }

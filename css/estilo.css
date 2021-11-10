@@ -58,145 +58,149 @@ header {
         background-color: lightgreen;
         border-radius: 1em; }
 
-main {
-  margin-bottom: 55vh; }
-  main .padre-carrusel {
-    max-width: 55rem; }
-    main .padre-carrusel img {
-      height: 50rem; }
-    main .padre-carrusel .eje-z-indicadores {
-      z-index: 2; }
-    main .padre-carrusel .eje-z-imagenes {
-      z-index: 1; }
-  main h1 {
-    font-family: 'Libre Baskerville', serif;
-    color: #004000;
-    font-weight: bolder;
+main .padre-carrusel {
+  max-width: 55rem; }
+  main .padre-carrusel img {
+    height: 50rem; }
+  main .padre-carrusel .eje-z-indicadores {
+    z-index: 2; }
+  main .padre-carrusel .eje-z-imagenes {
+    z-index: 1; }
+
+main h1 {
+  font-family: 'Libre Baskerville', serif;
+  color: #004000;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 2em;
+  margin-bottom: 0.5rem; }
+
+main h2 {
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  font-weight: bold; }
+
+main h5 {
+  padding: 3px;
+  margin-top: 1vh;
+  margin-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 2rem;
+  background-color: #a6d196; }
+
+main .padre-productos {
+  background-color: #93b487;
+  margin: 3em;
+  margin-top: 10rem;
+  border-radius: 4rem;
+  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+  main .padre-productos .titulo-productos {
+    width: 50%;
     text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-    font-size: 2em;
-    margin-bottom: 0.5rem; }
-  main h2 {
-    font-family: 'Lato', sans-serif;
-    padding: 10px;
-    font-weight: bold; }
-  main h5 {
-    padding: 3px;
-    margin-top: 1vh;
-    margin-bottom: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;
-    border-radius: 2rem;
-    background-color: #a6d196; }
-  main .padre-productos {
-    background-color: #93b487;
-    margin: 3em;
-    margin-top: 10rem;
+    background-color: #a6d196;
+    align-content: center;
     border-radius: 4rem;
-    box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
-    main .padre-productos .titulo-productos {
-      width: 50%;
+    margin-left: 10%; }
+  main .padre-productos .productos {
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    main .padre-productos .productos div {
       text-align: center;
-      background-color: #a6d196;
-      align-content: center;
-      border-radius: 4rem;
-      margin-left: 10%; }
-    main .padre-productos .productos {
-      justify-content: center;
-      padding: 20px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 2rem; }
-      main .padre-productos .productos div {
-        text-align: center;
-        justify-content: center; }
-      main .padre-productos .productos img {
-        width: 300px;
-        height: 300px; }
-      main .padre-productos .productos h5 {
-        padding: 3px; }
-  main .recetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; }
-    main .recetas div {
-      border: solid black 3px;
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 15px; }
-      main .recetas div .img {
-        width: 400px;
-        height: 400px;
-        align-items: center;
-        z-index: -1; }
-    main .recetas .recetas_imagen {
-      margin-top: 1rem; }
-    main .recetas .recetas_texto {
-      margin: 0 2rem 2rem; }
-      main .recetas .recetas_texto .lista {
-        margin-left: 2rem; }
-  main .galeria {
-    margin-bottom: 50vh; }
-    main .galeria div div .card {
-      text-align: center;
-      background-color: white;
-      margin: 2rem;
-      width: 250px;
+      justify-content: center; }
+    main .padre-productos .productos img {
+      width: 300px;
+      height: 300px; }
+    main .padre-productos .productos h5 {
+      padding: 3px; }
+
+main .recetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; }
+  main .recetas div {
+    border: solid black 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px; }
+    main .recetas div .img {
+      width: 400px;
       height: 400px;
-      box-shadow: 1px 1px 1px 1px gray;
-      border: 7px solid #f0e5d8; }
-      main .galeria div div .card:hover {
-        transform: translate(0px, -20px);
-        transform: scale(100px);
-        transition: all 1s; }
-        main .galeria div div .card:hover img {
-          align-items: center; }
-      main .galeria div div .card .card-texto {
-        background-color: #c5dbec;
-        padding: 0; }
-    main .galeria div img {
-      width: 200px;
-      height: 300px;
-      margin: 10px; }
-  main .combos {
-    margin-bottom: 50vh; }
-    main .combos div div .card {
-      text-align: center;
-      background-color: white;
-      margin: 2rem;
-      width: 250px;
-      height: 400px;
-      box-shadow: 1px 1px 1px 1px gray;
-      border: 7px solid #f0e5d8; }
-      main .combos div div .card:hover {
-        transform: translate(0px, -20px);
-        transform: scale(100px);
-        transition: all 1s; }
-      main .combos div div .card .card-texto {
-        background-color: #c5dbec;
-        padding: 0; }
-    main .combos div img {
-      width: 200px;
-      height: 300px;
-      margin: 10px;
-      text-align: center;
+      align-items: center;
+      z-index: -1; }
+  main .recetas .recetas_imagen {
+    margin-top: 1rem; }
+  main .recetas .recetas_texto {
+    margin: 0 2rem 2rem; }
+    main .recetas .recetas_texto .lista {
+      margin-left: 2rem; }
+
+main .galeria div div .card {
+  text-align: center;
+  background-color: white;
+  margin: 2rem;
+  width: 250px;
+  height: 400px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: 7px solid #f0e5d8; }
+  main .galeria div div .card:hover {
+    transform: translate(0px, -20px);
+    transform: scale(100px);
+    transition: all 1s; }
+    main .galeria div div .card:hover img {
       align-items: center; }
-  main .prueba {
-    height: 70vh;
-    margin-bottom: 20vh; }
-    main .prueba .padre-contacto {
-      height: 50vh;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto; }
-      main .prueba .padre-contacto form {
-        background-color: #93b487;
-        margin: 2em;
-        padding: 2rem; }
-      main .prueba .padre-contacto textarea {
-        resize: none; }
+  main .galeria div div .card .card-texto {
+    background-color: #c5dbec;
+    padding: 0; }
+
+main .galeria div img {
+  width: 200px;
+  height: 300px;
+  margin: 10px; }
+
+main .combos div div .card {
+  text-align: center;
+  background-color: white;
+  margin: 2rem;
+  width: 250px;
+  height: 400px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: 7px solid #f0e5d8; }
+  main .combos div div .card:hover {
+    transform: translate(0px, -20px);
+    transform: scale(100px);
+    transition: all 1s; }
+  main .combos div div .card .card-texto {
+    background-color: #c5dbec;
+    padding: 0; }
+
+main .combos div img {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  align-items: center; }
+
+main .prueba {
+  height: 70vh;
+  margin-bottom: 20vh; }
+  main .prueba .padre-contacto {
+    height: 50vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; }
+    main .prueba .padre-contacto form {
+      background-color: #93b487;
+      margin: 2em;
+      padding: 2rem; }
+    main .prueba .padre-contacto textarea {
+      resize: none; }
 
 .footer-especial {
   position: fixed;
@@ -204,16 +208,13 @@ main {
 
 footer {
   background-image: linear-gradient(to bottom, #e8d6c0, #93b487);
-  bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
   gap: 10%;
-  justify-content: center;
-  z-index: 5;
-  position: fixed; }
+  justify-content: center; }
   footer .logo-footer {
     margin-left: 2rem; }
   footer .footer-mapa .mapa {
